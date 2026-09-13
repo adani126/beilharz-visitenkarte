@@ -1,1 +1,156 @@
-:root{color-scheme:light}*{box-sizing:border-box}html{background:#17212c}body{margin:0;background:#17212c;font-family:Arial,Helvetica,sans-serif}.card-canvas{position:relative;width:100%;max-width:916px;margin:0 auto;line-height:0}.card-canvas picture{display:block}.card-artwork{display:block;width:100%;height:auto}.hotspots a{position:absolute;display:block;border-radius:1.2%;outline:0}.hotspots a:focus-visible{outline:3px solid #fff;outline-offset:-3px;box-shadow:0 0 0 5px #e30613}.save,.call,.mail{top:50.6%;height:4.9%}.save{left:3.4%;width:31.4%}.call{left:35.7%;width:28.8%}.mail{left:65.5%;width:31%}.map,.whatsapp,.web{top:56.2%;height:5%}.map{left:3.4%;width:31.4%}.whatsapp{left:35.7%;width:28.8%}.web{left:65.5%;width:31%}.phone-detail{left:14%;top:40.1%;width:36%;height:3.9%}.email-detail{left:14%;top:44.5%;width:36%;height:3.9%}.repair-phone{left:11%;top:65.8%;width:34%;height:2.5%}.repair-mail{left:11%;top:68.6%;width:34%;height:2.5%}.parts-phone{left:58%;top:65.8%;width:34%;height:2.5%}.parts-mail{left:58%;top:68.6%;width:34%;height:2.5%}@media(min-width:917px){.card-canvas{box-shadow:0 0 42px rgba(0,0,0,.34)}}
+:root{
+  color-scheme: light;
+  --red: #e30613;
+  --ink: #1c1e21;
+  --muted: #5a6069;
+  --line: #e7e2df;
+  --panel-bg: #ffffff;
+  --page-bg: #eef1f4;
+  --footer-bg: #22262b;
+}
+*{box-sizing:border-box}
+html{background:var(--page-bg)}
+body{
+  margin:0;
+  background:var(--page-bg);
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--ink);
+}
+.card{
+  position:relative;
+  width:100%;
+  max-width:520px;
+  margin:0 auto;
+  background:var(--page-bg);
+}
+@media(min-width:521px){
+  .card{box-shadow:0 0 42px rgba(0,0,0,.18)}
+}
+
+/* ---------- Hero / Logo ---------- */
+.hero{position:relative;line-height:0}
+.hero-photo{display:block;width:100%;height:auto}
+.hero-brand{
+  position:absolute;
+  left:4.5%;
+  top:6%;
+  width:52%;
+  line-height:normal;
+}
+.anniversary{
+  margin:0 0 4px;
+  font-size:clamp(11px,2.6vw,16px);
+  font-weight:bold;
+  color:#3a3f44;
+  text-align:right;
+}
+.brand-logo{display:block;width:100%;height:auto}
+
+/* ---------- Panels (weiße Kartenabschnitte) ---------- */
+.panel{
+  background:var(--panel-bg);
+  padding:20px 22px;
+  border-top:1px solid var(--line);
+}
+.contact-panel{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.two-col{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px 22px;
+}
+@media(max-width:400px){
+  .contact-panel, .two-col{grid-template-columns:1fr}
+}
+
+.name{margin:0 0 6px;font-size:26px;line-height:1.1}
+.positions{list-style:none;margin:0 0 14px;padding:0;color:var(--muted);font-size:14px;line-height:1.6}
+.divider{height:2px;background:var(--red);width:70%;margin:10px 0 14px}
+
+.org{margin:0 0 12px;font-size:16px;line-height:1.3}
+
+.contact-line{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  text-decoration:none;
+  color:var(--ink);
+  margin-bottom:12px;
+}
+.contact-line strong{font-size:15px}
+.contact-line small{color:var(--muted);font-weight:normal}
+.icon-badge{
+  flex:0 0 auto;
+  width:38px;height:38px;
+  border-radius:50%;
+  background:var(--red);
+  color:#fff;
+  display:flex;align-items:center;justify-content:center;
+}
+.icon-badge .icon{width:18px;height:18px}
+
+.info-line{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  margin:0 0 12px;
+  font-size:14px;
+  line-height:1.4;
+}
+.info-line a{color:var(--ink);text-decoration:none}
+.info-line small{color:var(--muted)}
+.icon-inline{width:18px;height:18px;flex:0 0 auto;margin-top:1px;color:var(--ink)}
+
+.icon{width:20px;height:20px}
+
+/* ---------- Buttons ---------- */
+.buttons{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:2px;
+  background:var(--line);
+}
+.btn{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:12px 10px;
+  text-decoration:none;
+  font-size:12.5px;
+  line-height:1.3;
+}
+.btn .icon{flex:0 0 auto}
+.btn small{display:block;font-weight:normal;opacity:.85}
+.btn-primary{background:var(--red);color:#fff}
+.btn-secondary{background:#f4f5f7;color:var(--ink)}
+
+/* ---------- Standorte / Leistungen ---------- */
+h3{margin:0 0 12px;font-size:15px}
+.locations{list-style:none;margin:0;padding:0}
+.locations li{display:flex;gap:10px;margin-bottom:14px;font-size:13.5px;line-height:1.4}
+.locations a{color:var(--ink);text-decoration:none}
+.locations .icon-inline{margin-top:2px}
+
+.services{list-style:none;margin:0 0 14px;padding:0;font-size:14px}
+.services li{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+
+.brands{display:block;width:100%;max-width:260px;height:auto}
+
+/* ---------- Footer ---------- */
+.site-footer{
+  background:var(--footer-bg);
+  color:#c7cbd1;
+  padding:16px 22px;
+  font-size:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px 16px;
+  justify-content:space-between;
+  align-items:center;
+}
+.footer-links a{color:#c7cbd1;text-decoration:none;margin-left:14px}
+.footer-links a:first-child{margin-left:0}
+.footer-links a:hover{text-decoration:underline}
