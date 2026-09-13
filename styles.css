@@ -31,6 +31,7 @@ body{
 .hero{position:relative;line-height:0}
 .hero-photo{display:block;width:100%;height:auto}
 .hero-brand{
+  display:none; /* temporär ausgeblendet: Original-Hero-Foto hat Logo/Tagline bereits eingebrannt */
   position:absolute;
   left:4%;
   top:4%;
