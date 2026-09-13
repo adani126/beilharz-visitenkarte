@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Daniel;André;;;
+FN:André Daniel
+ORG:Beilharz Nutzfahrzeuge Duisburg GmbH
+TITLE:Stellv. Betriebsleiter, Serviceberater, KFZ-Technikermeister
+TEL;TYPE=WORK,VOICE:+49 2065 996513
+TEL;TYPE=WORK,FAX:+49 2065 996565
+EMAIL;TYPE=WORK:daniel@beilharz.de
+ADR;TYPE=WORK:;;Hochstraße 81-83;Duisburg;;47228;Deutschland
+URL:https://www.beilharz.de
+END:VCARD
