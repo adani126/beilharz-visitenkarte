@@ -32,9 +32,9 @@ body{
 .hero-photo{display:block;width:100%;height:auto}
 .hero-brand{
   position:absolute;
-  left:4.5%;
-  top:6%;
-  width:52%;
+  left:4%;
+  top:4%;
+  width:44%;
   line-height:normal;
 }
 .anniversary{
@@ -45,6 +45,15 @@ body{
   text-align:right;
 }
 .brand-logo{display:block;width:100%;height:auto}
+.hero-divider{height:2px;background:var(--red);width:58%;margin:8px 0 7px}
+.hero-tag{
+  margin:0;
+  width:62%;
+  color:#2b2f33;
+  font-weight:bold;
+  font-size:clamp(9px,1.9vw,12.5px);
+  line-height:1.5;
+}
 
 /* ---------- Panels (weiße Kartenabschnitte) ---------- */
 .panel{
