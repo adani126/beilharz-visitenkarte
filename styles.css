@@ -10,6 +10,7 @@
 }
 *{box-sizing:border-box}
 html{background:var(--page-bg)}
+svg[hidden]{display:none} /* manche mobilen Browser ignorieren das hidden-Attribut bei SVG */
 body{
   margin:0;
   background:var(--page-bg);
