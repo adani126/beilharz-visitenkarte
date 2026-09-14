@@ -23,9 +23,6 @@ body{
   margin:0 auto;
   background:var(--page-bg);
 }
-@media(min-width:521px){
-  .card{box-shadow:0 0 42px rgba(0,0,0,.18)}
-}
 
 /* ---------- Hero / Logo ---------- */
 .hero{position:relative;line-height:0}
